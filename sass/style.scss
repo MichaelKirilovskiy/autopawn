@@ -1,0 +1,20 @@
+// variables & mixins
+@import "variables/mixins";
+@import "variables/vars";
+
+/* basic */
+@import "_type.scss";
+@import "_base.scss";
+
+// modules
+@import "modules/header";
+@import "modules/hero";
+@import "modules/heading";
+@import "modules/news";
+@import "modules/reviews";
+@import "modules/awards";
+@import "modules/contacts";
+@import "modules/footer";
+
+// mediaqueries
+@import "_media.scss";

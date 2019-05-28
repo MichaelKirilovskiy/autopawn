@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "AAIA,WAAW;AIJX,mBAAmB;AAEnB,AAAA,QAAQ,CAAC;EACR,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;CACX",
+    "sources": [
+        "../sass/style.scss",
+        "../sass/variables/_mixins.scss",
+        "../sass/variables/_vars.scss",
+        "../sass/_type.scss",
+        "../sass/_base.scss",
+        "../sass/modules/_header.scss",
+        "../sass/modules/_hero.scss",
+        "../sass/modules/_heading.scss",
+        "../sass/modules/_news.scss",
+        "../sass/modules/_reviews.scss",
+        "../sass/modules/_awards.scss",
+        "../sass/modules/_contacts.scss",
+        "../sass/modules/_footer.scss",
+        "../sass/_media.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}
