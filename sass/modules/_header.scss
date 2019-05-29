@@ -1,0 +1,186 @@
+// styles for navbar
+.navbar{
+    background-color: $color-primary;
+    transition: .4s ease;
+    &-brand{
+      text-align: center;
+    }
+    &-logo{
+      max-width: 80px;
+    }
+    &_container{
+      height: 100%;
+      width: inherit;
+    }
+    &_menu{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &_mobile{
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      padding: 5px;
+      z-index: 2;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &-phone{
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      margin-left: 10px;
+    }
+  }
+  .navigation{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nav{
+    &-item{
+      padding: 0 15px;
+      a{
+        color: $color-text-nav;
+        position: relative;
+        &::after{
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          background: $color-primary;
+          left: 0;
+          bottom: 0;
+          opacity: 0;
+        }
+        &:hover{
+          //text-decoration: none;
+          color: $color-secondary;
+          &::after{
+            width: 100%;
+            opacity: 1;
+            transition: .3s ease;
+          }
+        }
+      }
+    }
+  }
+  .nav-item .current{
+      &::after{
+          content: '';
+          position: absolute;
+          height: 2px;
+          background: $color-primary;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+      opacity: 1;
+      }
+  }
+  .navbar_nav{
+    & span {
+      color: #fff;
+    }
+  }
+  
+  // burger button styles
+  .navbar_button{
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    &:focus,
+    &:active{
+      outline: none;
+    }
+    & span{
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 50%;
+      background: $color-secondary;
+      opacity: 1;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+      &:nth-child(even) {
+        left: 50%;
+        border-radius: 0 9px 9px 0;
+      }
+      &:nth-child(odd) {
+        left:0px;
+        border-radius: 9px 0 0 9px;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        top: 3px;
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        top: 14px;
+      }
+      &:nth-child(5),
+      &:nth-child(6) {
+        top: 24px;
+      }
+    }
+    &.open{
+      span{
+        &:nth-child(1),
+        &:nth-child(6) {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        &:nth-child(2),
+        &:nth-child(5) {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+        &:nth-child(1) {
+          left: 3px;
+          top: 8px;
+        }
+        &:nth-child(2) {
+          left: calc(50% - 4px);
+          top: 7px;
+        }
+        &:nth-child(3) {
+          left: -50%;
+          opacity: 0;
+        }
+        &:nth-child(4) {
+          left: 100%;
+          opacity: 0;
+        }
+        &:nth-child(5) {
+          left: 3px;
+          top: 20px;
+        }
+        &:nth-child(6) {
+          left: calc(50% - 4px);
+          top: 20px;
+        }
+      }
+    }
+  }
+  
