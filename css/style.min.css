@@ -525,6 +525,7 @@ ol {
 }
 
 .easy_partner .easy_partner_item .card_image {
+  width: 100%;
   background-color: #DB2723;
   border-radius: 10px 10px 10px 0;
 }
@@ -589,6 +590,80 @@ ol {
 
 .easy_partner .easy_partner_button .btn_primary:active {
   background-color: rgba(219, 38, 35, 0.603);
+}
+
+.main_form {
+  border-top: 1px solid gray;
+}
+
+.main_form p {
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+.main_form p a, .main_form p strong {
+  text-decoration: underline;
+  color: #DB2723;
+}
+
+.main_form .heading {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_form .form_container_fluid {
+  background-color: #DB2723;
+}
+
+.main_form .form_container_fluid .form_container {
+  padding: 50px 10px;
+}
+
+.main_form .form_container_fluid .form_container .form_row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 10px;
+}
+
+.main_form .form_container_fluid .form-control {
+  border-radius: 15px;
+}
+
+.main_button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+}
+
+.main_button .btn_primary {
+  padding: 10px 25px;
+  color: #ffffff;
+  background-color: #DB2723;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  -webkit-box-shadow: 0px 3px #333333;
+          box-shadow: 0px 3px #333333;
+  cursor: pointer;
+}
+
+.main_button .btn_primary:hover {
+  background-color: #333333;
+  border-color: #333333;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 @media (max-width: 992px) {
