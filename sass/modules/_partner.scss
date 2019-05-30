@@ -1,0 +1,73 @@
+.easy_partner{
+
+    .easy_partner_item{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+        .card_image{
+    
+            background-color: $color-primary;
+            border-radius: 10px 10px 10px 0;
+    
+            h3 {
+                color: $color-text-nav;
+                padding: 10px 30px;
+            }
+            
+        }
+        .card_text{
+            
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .easy_partner_items{
+    
+        justify-content: flex-start;
+    }
+    
+    p{
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 0;
+    
+        strong{
+    
+            text-decoration: underline;
+            color: $color-primary;
+        }
+    }
+    
+
+    .easy_partner_button{
+        
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+        align-items: center;
+    
+        .btn_primary{
+            padding: 10px 25px;
+            background-color: $color-primary;
+            border: 2px solid $color-secondary;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            color: $color-text-nav;
+            box-shadow: 0px 3px $color-secondary;
+            cursor: pointer;
+            
+            &:hover{
+                background-color: $color-secondary;
+                border-color: $color-secondary;
+                transition: .3s ease;
+            }
+            &:active{
+                background-color: rgba(219, 38, 35, 0.603);
+            }
+        }
+    }
+}

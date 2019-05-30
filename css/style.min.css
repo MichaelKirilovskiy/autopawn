@@ -504,6 +504,93 @@ ol {
   text-align: center;
 }
 
+.plage_items {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.easy_partner .easy_partner_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.easy_partner .easy_partner_item .card_image {
+  background-color: #DB2723;
+  border-radius: 10px 10px 10px 0;
+}
+
+.easy_partner .easy_partner_item .card_image h3 {
+  color: #ffffff;
+  padding: 10px 30px;
+}
+
+.easy_partner .easy_partner_item .card_text p {
+  text-align: center;
+}
+
+.easy_partner .easy_partner_items {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.easy_partner p {
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+.easy_partner p strong {
+  text-decoration: underline;
+  color: #DB2723;
+}
+
+.easy_partner .easy_partner_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.easy_partner .easy_partner_button .btn_primary {
+  padding: 10px 25px;
+  background-color: #DB2723;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px #333333;
+          box-shadow: 0px 3px #333333;
+  cursor: pointer;
+}
+
+.easy_partner .easy_partner_button .btn_primary:hover {
+  background-color: #333333;
+  border-color: #333333;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.easy_partner .easy_partner_button .btn_primary:active {
+  background-color: rgba(219, 38, 35, 0.603);
+}
+
 @media (max-width: 992px) {
   .navbar-phone {
     font-size: 14px;
