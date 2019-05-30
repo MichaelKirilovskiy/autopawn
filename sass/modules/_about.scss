@@ -1,0 +1,33 @@
+.about{
+
+    padding: 80px 30px;    
+    .about_title{
+    
+        width: 100%;
+        background-color: $color-primary;
+        border-radius: 15px 15px 15px 0;
+
+        h3 {
+            color: $color-text-nav;
+            padding: 10px 30px;
+        }
+        
+    }
+
+    .about_description{
+
+        p{
+            text-align: justify;
+        }
+    }
+
+    .about_video{
+        display: flex;
+        
+        iframe{
+            align-self: center;
+            width: 100%;
+        }
+    }
+ 
+}

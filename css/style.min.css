@@ -636,6 +636,22 @@ ol {
   border-radius: 15px;
 }
 
+.main_form .conteiner_fluid_main_form {
+  position: relative;
+  height: 210px;
+}
+
+.main_form .conteiner_fluid_main_form .bg_main_form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: inherit;
+}
+
 .main_button {
   width: 100%;
   display: -webkit-box;
@@ -664,6 +680,92 @@ ol {
   border-color: #333333;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+}
+
+.about {
+  padding: 80px 30px;
+}
+
+.about .about_title {
+  width: 100%;
+  background-color: #DB2723;
+  border-radius: 15px 15px 15px 0;
+}
+
+.about .about_title h3 {
+  color: #ffffff;
+  padding: 10px 30px;
+}
+
+.about .about_description p {
+  text-align: justify;
+}
+
+.about .about_video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about_video iframe {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.advantages {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.advantages .advantages_container {
+  background-image: url(../img/w.jpg);
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+}
+
+.advantages .advantages_column h2 {
+  padding-top: 50px;
+}
+
+.advantages .advantages_column h3 {
+  font-size: 2.4rem;
+}
+
+.advantages .advantages_gallery {
+  max-width: 650px;
+  min-height: 500px;
+}
+
+.advantages .advantages_gallery .advantages_gallery_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px;
+}
+
+.advantages .advantages_gallery .card_image {
+  display: inline-block;
+  background-color: #DB2723;
+  border-radius: 0.9em 0.9em 0.9em 0em;
+  height: 65px;
+  width: 65px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.advantages .advantages_gallery .card_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages .advantages_gallery .card_description p {
+  margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
@@ -717,6 +819,9 @@ ol {
   .nav-item a {
     color: #000;
     font-weight: 700;
+  }
+  .advantages .advantages_container {
+    background-image: none;
   }
   .coaches_info {
     border-top-left-radius: 0;

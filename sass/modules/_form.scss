@@ -40,4 +40,23 @@
             border-radius: 15px;
         }
     }
+
+    .conteiner_fluid_main_form{
+
+        position: relative;
+        height: 210px;
+
+        .bg_main_form{
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: inherit;
+        }
+    }
+
 }
