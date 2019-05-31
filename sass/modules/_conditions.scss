@@ -1,0 +1,29 @@
+.conditions{
+
+    .conditions_item{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span{
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 20%;
+            background: $color-primary;
+            opacity: 1;
+        }
+
+        p{
+
+            text-align: justify;
+            padding: 20px 30px;
+
+        }
+
+        
+    }
+
+    
+}

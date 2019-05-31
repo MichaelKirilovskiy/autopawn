@@ -2,6 +2,7 @@
 
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    padding-top: 5px;
     
 
     .advantages_container{
@@ -9,6 +10,7 @@
         background-image: url( ../img/w.jpg);
         background-position: 100% 0%;
         background-repeat: no-repeat;
+        overflow: hidden;
     }
     .advantages_column{
 
@@ -49,6 +51,7 @@
 
             p{
                 margin-bottom: 0;
+                padding-left: 15px;
             }
         }
     }
