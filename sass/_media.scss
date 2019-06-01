@@ -28,7 +28,14 @@
       }
     }
   }
+
+  .work_item::before{
+
+    display: none;
+  }
 }
+
+  
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 768px) {
@@ -63,6 +70,17 @@
       background-image: none;
     }
   }
+
+  .work{
+    background-image: none;
+
+    .work_item::before{
+
+      display: none;
+    }
+
+  }
+
   .coaches{
     &_info{
       border-top-left-radius: 0;

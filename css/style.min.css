@@ -368,6 +368,7 @@ ol {
 
 .hero_bg {
   z-index: -1;
+  background-position: right;
 }
 
 .hero_info {
@@ -381,6 +382,10 @@ ol {
 
 .hero_motto {
   padding: 50px 0;
+}
+
+.hero_fg_container {
+  height: inherit;
 }
 
 .hero_fg_row {
@@ -447,7 +452,7 @@ ol {
 }
 
 .hero {
-  height: 80vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -478,7 +483,38 @@ ol {
   padding: 50px 0;
 }
 
-.plage_item {
+.footer {
+  padding: 80px 0;
+  background-color: #dadada;
+}
+
+.footer p {
+  text-align: justify;
+}
+
+.footer .footer_button {
+  padding: 10px 0;
+}
+
+.footer .social_list {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .social_list .social_item .fab {
+  color: #DB2723;
+  font-size: 2.1rem;
+}
+
+.footer .social_list .social_item .fab:hover {
+  opacity: 0.5;
+}
+
+.plage {
+  border-top: 2px solid gray;
+}
+
+.plage .plage_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,7 +528,7 @@ ol {
   width: 100%;
 }
 
-.plage_item .card_image {
+.plage .plage_item .card_image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -500,11 +536,11 @@ ol {
   background-size: cover;
 }
 
-.plage_item .card_text p {
+.plage .plage_item .card_text p {
   text-align: center;
 }
 
-.plage_items {
+.plage .plage_items {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -851,6 +887,10 @@ ol {
   color: #333333;
 }
 
+.conditions {
+  padding-bottom: 80px;
+}
+
 .conditions .conditions_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -878,6 +918,137 @@ ol {
   padding: 20px 30px;
 }
 
+.conditions .collapse_button {
+  background-color: #DB2723;
+  border-radius: 35px 35px 35px 0;
+  cursor: pointer;
+}
+
+.conditions .collapse_button h3 {
+  color: #ffffff;
+  padding: 15px;
+}
+
+.conditions .cond_item_collapse {
+  position: relative;
+}
+
+.conditions .cond_item_collapse::before {
+  content: " ";
+  background-color: #DB2723;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.work {
+  background-image: url("/img/bg_2.jpg");
+  background-position: right;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.work .work_heading {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.work .work_items {
+  background-image: url("/img/striple.png");
+  background-position: left;
+  background-size: cover;
+  padding-top: 30px;
+}
+
+.work .work_items .work_item {
+  position: relative;
+}
+
+.work .work_items .work_item::before {
+  content: " ";
+  background-color: #DB2723;
+  position: absolute;
+  top: 70px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.work .work_items .work_item:nth-child(1)::before {
+  display: none;
+}
+
+.work .work_items .work_item p {
+  padding: 15px;
+}
+
+.work .work_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.work .work_item .card_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.work .work_item .card_text p {
+  text-align: center;
+}
+
+.work .work_items {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.map .map_container_fluid {
+  position: relative;
+}
+
+.map .map_container {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+
+.map .contact {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.map .contact .email {
+  border-bottom: 1px solid gray;
+}
+
+.map .contact .map_button {
+  padding: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 @media (max-width: 992px) {
   .navbar-phone {
     font-size: 14px;
@@ -900,6 +1071,9 @@ ol {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .work_item::before {
+    display: none;
   }
 }
 
@@ -932,6 +1106,12 @@ ol {
   }
   .advantages .advantages_container {
     background-image: none;
+  }
+  .work {
+    background-image: none;
+  }
+  .work .work_item::before {
+    display: none;
   }
   .coaches_info {
     border-top-left-radius: 0;

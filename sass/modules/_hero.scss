@@ -1,7 +1,10 @@
 .hero_bg{
     
     z-index: -1;
+    background-position: right;
+
 }
+
 
 .hero_info{
     padding: 30px 0 50px 0;
@@ -17,6 +20,11 @@
     padding: 50px 0;
 
 
+}
+
+.hero_fg_container{
+
+    height: inherit;
 }
 
 .hero_fg_row{
@@ -77,7 +85,7 @@
 
 .hero{
 
-    height: 80vh;
+    height: 100vh;
     position: relative;
 
     .btn_primary{

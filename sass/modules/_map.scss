@@ -1,0 +1,40 @@
+.map{
+
+    iframe{
+
+        width: 100%;
+        //height: inherit;
+    }
+
+    .map_container_fluid{
+
+        position: relative;
+       // height: inherit;
+
+    }
+
+    .map_container{
+
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        //height: inherit;
+    }
+    .contact{
+
+        background-color: $color-text-nav;
+        border-radius: 30px;
+        padding: 30px;
+
+        .email{
+
+            border-bottom: 1px solid gray;
+        }
+
+        .map_button{
+
+            padding: 10px;
+            justify-content: flex-start;
+        }
+    }
+}

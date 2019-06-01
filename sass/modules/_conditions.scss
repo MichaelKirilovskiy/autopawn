@@ -1,5 +1,6 @@
 .conditions{
 
+    padding-bottom: 80px;
     .conditions_item{
 
         display: flex;
@@ -23,6 +24,34 @@
         }
 
         
+    }
+
+    .collapse_button{
+
+        background-color: $color-primary;
+        border-radius: 35px 35px 35px 0;
+        cursor: pointer;
+        
+        h3{
+            color: $color-text-nav;
+            padding: 15px;
+        }
+    }
+
+    .cond_item_collapse{
+
+        position: relative;
+
+        &::before{
+            content: " ";
+            background-color: $color-primary;
+            position: absolute;
+            top: 25px;
+            left: 15px;
+            width: 20px;
+            height: 20px;
+
+        }
     }
 
     

@@ -1,25 +1,29 @@
-.plage_item{
+.plage{
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    border-top: 2px solid gray;
+    .plage_item{
 
-    .card_image{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-position: center;
-        background-size: cover;
-    }
-    .card_text{
-        
-        p{
-            text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+        .card_image{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+        .card_text{
+            
+            p{
+                text-align: center;
+            }
         }
     }
-}
-.plage_items{
-
-    justify-content: flex-start;
+    .plage_items{
+    
+        justify-content: flex-start;
+    }
 }

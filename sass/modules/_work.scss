@@ -1,0 +1,81 @@
+.work{
+
+    background-image: url('/img/bg_2.jpg');
+    background-position: right;
+    background-size: cover;
+    padding: 80px 0;
+
+    .work_heading{
+        justify-content: flex-start;
+    }
+
+    .work_items{
+        background-image: url('/img/striple.png');
+        background-position: left;
+        background-size: cover;
+        padding-top: 30px;
+
+        .work_item{
+
+            position: relative;
+
+            &::before{
+                content: " ";
+                background-color: $color-primary;
+                position: absolute;
+                top: 70px;
+                left: -15px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+
+            }
+
+            &:nth-child(1){
+
+                &::before{
+
+                    display: none;
+
+                }
+
+            }
+
+            p{
+                padding: 15px;
+            }
+
+        }
+
+
+    }
+    
+    .work_item{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+
+        
+    
+        .card_image{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+        .card_text{
+            
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .work_items{
+    
+        justify-content: flex-start;
+    }
+}
