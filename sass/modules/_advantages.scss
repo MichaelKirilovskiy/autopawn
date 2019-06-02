@@ -29,6 +29,11 @@
 
         max-width: 650px;
         min-height: 500px;
+        
+        .advantages_gallery_row{
+
+            border-radius: 35px 0 35px 0;
+        }
 
         .advantages_gallery_item{
             display: flex;

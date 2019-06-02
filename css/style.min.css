@@ -806,6 +806,10 @@ ol {
   min-height: 500px;
 }
 
+.advantages .advantages_gallery .advantages_gallery_row {
+  border-radius: 35px 0 35px 0;
+}
+
 .advantages .advantages_gallery .advantages_gallery_item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1072,6 +1076,7 @@ ol {
   background-color: #ffffff;
   border-radius: 30px;
   padding: 30px;
+  border-radius: 35px 0 35px 0;
 }
 
 .map .contact .email {
