@@ -87,7 +87,7 @@ $(document).ready(function(){
         }
         else{
           $('.navbar-logo').css('max-width', '80px');
-          $('.navbar').css('background-color', 'transparent');
+          $('.navbar').css('background-color', '$color-primary');
         }
     });
 

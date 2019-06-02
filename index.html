@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/hover_style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700&display=swap" rel="stylesheet">
@@ -16,10 +18,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header fix">
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar_container d-flex">
+                        <div class="navbar_brand">
+                            <a href="#">
+                                <img src="img/logo.png" alt="logo" class="navbar-logo">
+                            </a>
+                        </div>
                         <div class="navbar_menu d-flex align-items center">
                             <div class="navbar_mobile">
                                 <button class="navbar_button">
@@ -34,11 +41,8 @@
                             <div class="navigation">
                                 <ul class="navbar_nav d-flex">
                                     <li class="nav-item"><a href="#about">О нас</a></li>
-                                    <span class="nav-item">·</span>
                                     <li class="nav-item"><a href="#conditions">Условия получения</a></li>
-                                    <span class="nav-item">·</span>
                                     <li class="nav-item"><a href="#calculator">Калькулятор автозайма</a></li>
-                                    <span class="nav-item">·</span>
                                     <li class="nav-item"><a href="#contacts">Контакты</a></li>
                                 </ul>
                             </div>
@@ -48,7 +52,34 @@
             </nav>
         </header>
         <div class="sections_wrap">
-            <section class="hero">
+                <section class="hero">
+                        <div class="hero_images">
+                          <div class="swiper-container hero_bg_container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="bg hero_bg" style="background-image: url('img/hero_bg.jpg')"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Swiper for fg-->
+                        <div class="hero_info">
+                          <div class="swiper-container hero_fg_container" dir="rtl">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="fg hero_fg">
+                                  <div class="fg_container">
+                                    <div class="hero_motto">
+                                        <h2>Кредиты</h2>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+            <!-- <section class="hero">
                 <div class="hero_images">
                     <div class="bg hero_bg" style="background-image: url('img/hero_bg.jpg')"></div>
                 </div>
@@ -96,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-              </section>
+              </section> -->
               <!-- /.hero -->
               <section class="plage">
                   <div class="container">
@@ -218,7 +249,7 @@
               <section class="about" id="about">
                   <div class="container about_container">
                       <div class="row about_row">
-                        <div class="about_description col-12 col-md-6">
+                        <div class="about_description skew col-12 col-md-6">
                             <div class="about_title"><h3>Информация об автоломбарде Line</h3></div>
                             <div class="about_text">
                                 <p>Автоломбард в составе группы Line успешно
@@ -234,7 +265,7 @@
                                 <h3>Будем рады видеть добросовестных заемщиков!</h3>
                             </div>
                         </div>
-                        <div class="about_video col-12 col-md-6">
+                        <div class="about_video skew col-12 col-md-6">
                             <iframe src="https://www.youtube.com/watch?v=c2-P9AcYX-g.html" seamless>
                                 Ваш браузер не поддерживает встроенные фреймы!
                              </iframe>
@@ -250,7 +281,7 @@
                             <h2>Преимущества</h2>
                             <h3>ломбарда Line</h3>
                             <div class="advantages_gallery">
-                                <div class="row advantages_gallery_row">
+                                <div class="row skew advantages_gallery_row">
                                     <div class="advantages_gallery_item col-12 col-sm-12 col-md-12 col-lg-6">
                                         <div class="card_image" style="background-image: url('img/paper.png')"></div>
                                         <div class="card_description">
@@ -303,11 +334,11 @@
                         <div class="row form_row calculator_form_row">
                             <div class="col col-8 col-sm-6">
                                 <label for="formCalc1">Сумма займа</label>
-                                <input type="text" class="form-control" placeholder="350000руб." id="formCalc1">
+                                <input type="text" class="skew form-control" placeholder="350000руб." id="formCalc1">
                             </div>
                             <div class="col col-8 col-sm-6">
                                 <label for="formCalc2">Срок займа (с возможностью досрочного погашения)</label>
-                                <select class="form-control calculator_form_control" id="formCalc2">
+                                <select class="skew form-control calculator_form_control" id="formCalc2">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -492,6 +523,8 @@
     </div>
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/swiper/js/swiper.min.js"></script>
+    <script src="libs/wow.js/wow.min.js"></script>
     <script src="js/common.js"></script>
     
 </body>

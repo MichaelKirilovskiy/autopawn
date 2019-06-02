@@ -11,6 +11,7 @@
         background-position: 100% 0%;
         background-repeat: no-repeat;
         overflow: hidden;
+        padding: 50px;
     }
     .advantages_column{
 
@@ -32,6 +33,7 @@
         .advantages_gallery_item{
             display: flex;
             padding: 18px;
+            transform: skew(10deg, 0);
         }
 
         .card_image{

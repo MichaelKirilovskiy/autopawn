@@ -87,3 +87,10 @@
 	}	
 }
 
+.skew {
+	transform: skew(-10deg, 0);
+	padding: 15px;
+	border: 1px solid gray;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+

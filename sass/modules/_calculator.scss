@@ -15,16 +15,19 @@
 
         height: 350px;
         background-color: $color-primary;
-        border-radius: 35px 35px 35px 0;
+        border-radius: 35px 0 35px 0;
+        transform: skew(-10deg, 0);
     }
 
     .calculator_output_row{
 
+        transform: skew(10deg, 0);
         padding: 80px 50px;
 
         .calculator_output_field{
 
             border-left: 4px solid $color-text-nav;
+            
 
             h2{
                 color: $color-text-nav;

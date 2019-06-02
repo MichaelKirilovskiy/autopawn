@@ -37,7 +37,8 @@
         }
 
         .form-control{
-            border-radius: 15px;
+            border-radius: 15px 0 15px 0 ;
+            transform: skew(-10deg, 0)
         }
     }
 

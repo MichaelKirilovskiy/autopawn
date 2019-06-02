@@ -177,6 +177,15 @@ ol {
   padding-bottom: 5px;
 }
 
+.skew {
+  -webkit-transform: skew(-10deg, 0);
+          transform: skew(-10deg, 0);
+  padding: 15px;
+  border: 1px solid gray;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .navbar {
   background-color: #DB2723;
   -webkit-transition: .4s ease;
@@ -229,6 +238,12 @@ ol {
 
 .nav-item {
   padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-item a {
@@ -366,14 +381,22 @@ ol {
   top: 20px;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero_bg {
-  z-index: -1;
   background-position: right;
 }
 
 .hero_info {
   padding: 30px 0 50px 0;
   height: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .hero_contacts_row {
@@ -669,7 +692,9 @@ ol {
 }
 
 .main_form .form_container_fluid .form-control {
-  border-radius: 15px;
+  border-radius: 15px 0 15px 0;
+  -webkit-transform: skew(-10deg, 0);
+          transform: skew(-10deg, 0);
 }
 
 .main_form .conteiner_fluid_main_form {
@@ -722,6 +747,10 @@ ol {
   padding: 80px 30px;
 }
 
+.about .row {
+  padding: 15px;
+}
+
 .about .about_title {
   width: 100%;
   background-color: #DB2723;
@@ -761,6 +790,7 @@ ol {
   background-position: 100% 0%;
   background-repeat: no-repeat;
   overflow: hidden;
+  padding: 50px;
 }
 
 .advantages .advantages_column h2 {
@@ -781,6 +811,8 @@ ol {
   display: -ms-flexbox;
   display: flex;
   padding: 18px;
+  -webkit-transform: skew(10deg, 0);
+          transform: skew(10deg, 0);
 }
 
 .advantages .advantages_gallery .card_image {
@@ -819,10 +851,14 @@ ol {
 .calculator .calculator_output_container_fg {
   height: 350px;
   background-color: #DB2723;
-  border-radius: 35px 35px 35px 0;
+  border-radius: 35px 0 35px 0;
+  -webkit-transform: skew(-10deg, 0);
+          transform: skew(-10deg, 0);
 }
 
 .calculator .calculator_output_row {
+  -webkit-transform: skew(10deg, 0);
+          transform: skew(10deg, 0);
   padding: 80px 50px;
 }
 
